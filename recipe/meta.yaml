@@ -29,7 +29,7 @@ test:
 about:
   home: https://bitbucket.org/livibetter/smartypants.py
   license_file: COPYING
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   summary: 'Python with the SmartyPants'
   dev_url: https://bitbucket.org/livibetter/smartypants.py
