@@ -1,23 +1,18 @@
 {% set name = "smartypants" %}
 {% set version = "2.0.0" %}
-{% set compress_type = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash = "7812353a32022699a1aa8cd5626e01c94a946dcaeedaee2d0b382bae4c4cbf36" %}
-{% set build = 1 %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 7812353a32022699a1aa8cd5626e01c94a946dcaeedaee2d0b382bae4c4cbf36
 
 build:
   noarch: python
-  number: {{ build }}
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 2
+  script: python -m pip install . -vvv
 
 requirements:
   host:
