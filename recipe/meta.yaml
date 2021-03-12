@@ -11,16 +11,16 @@ source:
 
 build:
   noarch: python
-  number: 2
-  script: python -m pip install . -vvv
+  number: 3
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.0
 
   run:
-    - python
+    - python >=3.0
 
 test:
   imports:
@@ -38,3 +38,4 @@ about:
 extra:
   recipe-maintainers:
     - pmlandwehr
+    - thewchan
