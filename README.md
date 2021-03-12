@@ -1,7 +1,7 @@
 About smartypants
 =================
 
-Home: https://bitbucket.org/livibetter/smartypants.py
+Home: https://github.com/leohemsted/smartypants.py
 
 Package license: BSD-3-Clause
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/smartypants-fee
 
 Summary: Python with the SmartyPants
 
-Development: https://bitbucket.org/livibetter/smartypants.py
+Development: https://github.com/leohemsted/smartypants.py
 
 Documentation: https://pythonhosted.org/smartypants/
 
