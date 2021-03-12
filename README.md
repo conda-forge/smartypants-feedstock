@@ -1,7 +1,7 @@
 About smartypants
 =================
 
-Home: https://bitbucket.org/livibetter/smartypants.py
+Home: https://github.com/leohemsted/smartypants.py
 
 Package license: BSD-3-Clause
 
