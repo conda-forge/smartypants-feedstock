@@ -1,5 +1,5 @@
 {% set name = "smartypants" %}
-{% set version = "2.0.0" %}
+{% set version = "2.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7812353a32022699a1aa8cd5626e01c94a946dcaeedaee2d0b382bae4c4cbf36
+  sha256: 8db97f7cbdf08d15b158a86037cd9e116b4cf37703d24e0419a0d64ca5808f0d
 
 build:
   noarch: python
-  number: 3
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -27,12 +27,12 @@ test:
     - smartypants
 
 about:
-  home: https://bitbucket.org/livibetter/smartypants.py
+  home: https://github.com/leohemsted/smartypants.py
   license_file: COPYING
   license: BSD-3-Clause
   license_family: BSD
   summary: 'Python with the SmartyPants'
-  dev_url: https://bitbucket.org/livibetter/smartypants.py
+  dev_url: https://github.com/leohemsted/smartypants.py
   doc_url: https://pythonhosted.org/smartypants/
 
 extra:
