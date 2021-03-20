@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/leohemsted/{{ name }}.py/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 8db97f7cbdf08d15b158a86037cd9e116b4cf37703d24e0419a0d64ca5808f0d
+  sha256: b98191911ff3b4144ef8ad53e776a2d0ad24bd508a905c6ce523597c40022773
 
 build:
   noarch: python
