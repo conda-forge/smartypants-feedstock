@@ -1,5 +1,5 @@
 {% set name = "smartypants" %}
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/leohemsted/{{ name }}.py/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: b98191911ff3b4144ef8ad53e776a2d0ad24bd508a905c6ce523597c40022773
+  sha256: 560ae7485a27c288f5bd63131f5c3c7b8f0745f50e7c3f85f0bbc65d87799d19
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
